@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="utf-8" />
+  <title>فروشگاه قطعات عظام — موتوری 405</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --card:#ffffff;
+      --accent:#ff3f6c;
+      --text:#222;
+      --muted:#666;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: "Tahoma", "Arial", sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      direction:rtl;
+      -webkit-font-smoothing:antialiased;
+    }
+    header{
+      padding:18px 16px;
+      text-align:center;
+      background:#fff;
+      box-shadow:0 1px 0 rgba(0,0,0,0.05);
+      position:sticky; top:0; z-index:10;
+    }
+    header h1{margin:0;font-size:26px}
+    .container{max-width:1200px;margin:28px auto;padding:0 16px}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+    /* responsive */
+    @media (max-width:1000px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:640px){ .grid{grid-template-columns:1fr} header h1{font-size:20px} }
+
+    .card{
+      background:var(--card);
+      border-radius:12px;
+      overflow:hidden;
+      box-shadow:0 6px 20px rgba(15,20,30,0.06);
+      display:flex;
+      flex-direction:column;
+      min-height:360px;
+    }
+    .thumb{
+      height:220px;
+      background:#fafafa;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-bottom:1px solid #eee;
+    }
+    .thumb img{max-width:100%; max-height:100%; object-fit:contain}
+    .info{padding:14px 16px; flex:1; display:flex; flex-direction:column; justify-content:space-between}
+    .title{font-size:18px; margin:6px 0 4px}
+    .brand{color:var(--muted); font-size:14px}
+    .desc{color:var(--muted); font-size:13px; margin-top:8px; line-height:1.4}
+    .actions{margin-top:12px; display:flex; gap:10px; align-items:center}
+    .btn{
+      background:var(--accent); color:#fff; padding:10px 12px; border-radius:8px; text-decoration:none;
+      font-weight:600; display:inline-block;
+    }
+    .btn-muted{
+      background:#eee; color:#444; padding:8px 10px; border-radius:8px; text-decoration:none; font-size:13px;
+    }
+    .meta{margin-top:10px; color:var(--muted); font-size:13px}
+    footer{padding:30px 0;text-align:center;color:#777}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🛠️ فروشگاه قطعات موتوری — برند عظام (پژو 405)</h1>
+  </header>
+
+  <main class="container">
+    <section class="grid">
+
+      <!-- Product 1 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/piston.jpg -->
+          <img src="images/piston.jpg" alt="پیستون عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">پیستون عظام</div>
+            <div class="brand">مشخصات: مناسب پژو 405 — موتور XU7</div>
+            <div class="desc">پیستون فابریک عظام با استاندارد کارخانه؛ مقاومت حرارتی بالا و طول عمر مناسب.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-PST-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/piston-rings.jpg -->
+          <img src="images/piston-rings.jpg" alt="رینگ پیستون عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">رینگ پیستون (کیت)</div>
+            <div class="brand">کیفیت: OEM — مناسب پژو 405</div>
+            <div class="desc">کیت کامل رینگ پیستون جهت آب‌بندی مناسب و کاهش مصرف روغن موتور.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-RNG-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/connecting-rod.jpg -->
+          <img src="images/connecting-rod.jpg" alt="شاتون عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">شاتون عظام</div>
+            <div class="brand">استاندارد: فابریک</div>
+            <div class="desc">شاتون گرم‌کاری شده با کنترل کیفیت دقیق برای دوام و استهلاک کمتر در موتور XU7.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-CRD-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/crankshaft.jpg -->
+          <img src="images/crankshaft.jpg" alt="میل‌لنگ عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">میل‌لنگ عظام</div>
+            <div class="brand">مناسب پژو 405</div>
+            <div class="desc">میل‌لنگ تراش‌خورده با بالانس دقیق و تلرانس کارخانه‌ای برای عملکرد پایدار موتور.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-CRK-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/bearing-main.jpg -->
+          <img src="images/bearing-main.jpg" alt="یاتاقان ثابت عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">یاتاقان ثابت عظام</div>
+            <div class="brand">گروه: یاتاقان‌ها</div>
+            <div class="desc">یاتاقان‌های ثابت با روکش مقاوم و تحمل بار بالا؛ سازگار با مشخصات فنی 405.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-BRG-MAIN-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/bearing-rod.jpg -->
+          <img src="images/bearing-rod.jpg" alt="یاتاقان متحرک عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">یاتاقان متحرک (یاتاقان شاتون)</div>
+            <div class="brand">استاندارد صنعتی</div>
+            <div class="desc">یاتاقان شاتون با پوشش مقاوم جهت جلوگیری از سایش و افزایش عمر قطعات متحرک.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-BRG-ROD-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 7 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/oil-pump.jpg -->
+          <img src="images/oil-pump.jpg" alt="اوئیل پمپ عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">اویل‌پمپ (پمپ روغن)</div>
+            <div class="brand">عملکرد بالا</div>
+            <div class="desc">پمپ روغن با فشار مناسب و تحمل حرارتی بالا — تامین روانکاری موتور.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-OILP-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 8 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/camshaft.jpg -->
+          <img src="images/camshaft.jpg" alt="میل‌سوپاپ عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">میل‌سوپاپ عظام</div>
+            <div class="brand">برای موتور XU7</div>
+            <div class="desc">میل‌سوپاپ ساخته‌شده با سختی مناسب و پایداری طولانی‌مدت در شرایط کاری متنوع.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-CAM-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 9 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/valve.jpg -->
+          <img src="images/valve.jpg" alt="سوپاپ عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">سوپاپ دود / هوا (کیت)</div>
+            <div class="brand">مناسب 405</div>
+            <div class="desc">سوپاپ‌های استاندارد با آلیاژ مقاوم برای دوام و آب‌بندی مناسب در سرسیلندر.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-VAL-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 10 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/head-assembly.jpg -->
+          <img src="images/head-assembly.jpg" alt="سرسیلندر عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">سرسیلندر کامل عظام</div>
+            <div class="brand">شامل سوپاپ و کاسه‌ها</div>
+            <div class="desc">سرسیلندر با کنترل ابعادی دقیق، آماده نصب بر روی بلوک سیلندر 405.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-HEAD-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 11 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/front-seal.jpg -->
+          <img src="images/front-seal.jpg" alt="کاسه‌نمد جلو عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">کاسه‌نمد جلو</div>
+            <div class="brand">اورجینال عظام</div>
+            <div class="desc">کاسه‌نمد میل‌لنگ جلو با قطر و جنس استاندارد برای جلوگیری از نفوذ روغن.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-SEAL-FR-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 12 -->
+      <article class="card">
+        <div class="thumb">
+          <!-- آپلود کن: images/rear-seal.jpg -->
+          <img src="images/rear-seal.jpg" alt="کاسه‌نمد عقب عظام" />
+        </div>
+        <div class="info">
+          <div>
+            <div class="title">کاسه‌نمد عقب</div>
+            <div class="brand">استاندارد عظام</div>
+            <div class="desc">کاسه‌نمد میل‌لنگ عقب جهت آب‌بندی مناسب و کاهش نشت روغن.</div>
+          </div>
+          <div>
+            <div class="meta">کد محصول: EZ-SEAL-RR-405</div>
+            <div class="actions">
+              <a class="btn" href="#">مشاهده جزئیات</a>
+              <a class="btn-muted" href="#">درخواست موجودی</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <footer>
+    <div style="max-width:900px;margin:0 auto;padding:18px;color:#666">
+      © تمام حقوق برای فروشگاه شما محفوظ است — طراحی نمونه
+    </div>
+  </footer>
+
+</body>
+</html>
